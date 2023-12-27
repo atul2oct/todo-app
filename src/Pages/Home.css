@@ -8,68 +8,96 @@
     color: rgb(0, 195, 255);
 }
 
-/* Get Started Button! */
-.sign-up-btn{
-    background-color: rgb(255, 65, 138);
-    width: 150px;
-    text-align: center;
-    margin-top: 30px;
-    padding: 10px 0;
-    border-radius: 25px;
-    font-size: 1.2rem;
-    color: rgb(232, 232, 232);
-    text-decoration: none;
-}
-.wel-quote{
-    font-size: 30px;
-    color: rgb(191, 191, 191);
+/* CSS */
+.button-85 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 
-/* Welcome Page Logo */
-/* .wel-page-img{
-    flex: 1;
-    display: flex;
-    align-items: center;
-    background-image: url('../../assets/images/todo.png');
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    margin-right: 20px;
-} */
-.responsive-img{
-    display: none;
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+.wel-quote{
+    font-size: 25px;
+    color: rgb(191, 191, 191);
 }
 
 /* Media Queries */
 
-@media screen and (max-width:920px){
-    .home-page-content{
-    flex-direction: column-reverse;
-    }
-    .wel-page-img{
-        display: none;
-    }
-
-    /* .responsive-img{
-        display: block;
-        height: 300px;
-        background-image: url(../../assets/svg/homeimg.svg);
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-    } */
-}
-
 @media screen and (max-width:750px){
     .wel-heading{
         font-size: 50px;
+    }
+    .wel-quote{
+        font-size: 15px;
     }
 }
 
 @media screen and (max-width:500px){
     .wel-heading{
         font-size: 40px;
+    }
+    .wel-quote{
+        font-size: 10px;
     }
     .home-page{
     padding: 0 10px;

@@ -1,0 +1,23 @@
+/* dashboard Tasks Toggler */
+.dash-tasks-togg{
+    display: flex;
+    height: 35px;
+    border-radius: 35px;
+    background-color: rgba(225, 225, 225, 0.928);
+}
+
+.dash-tog-btn{
+    width: 120px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+
+.active-toggle{
+    background-color: rgb(0, 162, 255);
+    color: white;
+}

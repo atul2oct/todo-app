@@ -1,5 +1,5 @@
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { createContext } from "react";
 import toast from "react-hot-toast";
 
@@ -37,18 +37,6 @@ export default function FetchedContextProvider({children}){
         }
         setLoading(false);
     }
-
-    // Storing Task in LOcal storage, if Doesnt exists then creating
-    // const storedTasks = JSON.parse(localStorage.getItem("tasks"))
-    // if (storedTasks && storedTasks.length>0) {
-    //   setTasks(storedTasks);
-    // } else {
-    //   fetchData();
-    // }
-
-    // useEffect(() => {
-    //     fetchData();
-    //   },[]);
 
     // Deleteing Task
     const deleteTask = async (id) => {

@@ -1,0 +1,18 @@
+.dashboard-page{
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 45px);
+    gap: 10px;
+    padding: 0 40px;
+}
+.dash-container-content{
+    display: flex;
+    height: calc(100% - 45px);
+    gap: 10px;
+}
+
+@media screen and (max-width:500px) {
+    .dashboard-page{
+        padding:0 10px;
+    }
+}
