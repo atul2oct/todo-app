@@ -1,0 +1,48 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.logo{
+    font-size:2rem ;
+    color: rgb(219, 243, 255);
+    cursor: pointer;
+}
+.logo span {
+    color: rgb(255, 37, 106);
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+}
+.nav-list-item{
+    list-style: none;
+    cursor: pointer;
+    color: rgb(222, 222, 222);
+    transition: all 0.3s;
+    text-decoration: none;
+}
+.nav-list-item:hover{
+    color: rgb(255, 37, 106);
+    transition: all 0.5s;
+}
+
+@media screen and (max-width:600px) {
+    nav{
+        flex-direction: column;
+        height: 15vh;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+   .nav-list{
+    flex-direction: row;
+   }
+}
