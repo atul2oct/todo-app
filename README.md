@@ -1,6 +1,9 @@
 # React ToDo App
 The React ToDo App is a user-friendly task management application designed to help you stay organized and productive. It provides a soothing and visually appealing user interface, along with a range of features to enhance your task management experience.
 
+# Todo-App Url
+https://todo-atul.netlify.app/
+
 ## Fetch and show todo items from the api
 https://jsonplaceholder.typicode.com/todos
 
