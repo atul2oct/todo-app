@@ -16,6 +16,8 @@ https://jsonplaceholder.typicode.com/todos
 
 > Alerts: The app allows users to set alerts for their tasks, ensuring they never miss an important deadline.
 
+>Search and Organise:Search tasks with any keyword you dont need to type the whole word, just type 3-4 words and you will get the results and you can filter tasks as per your convienience 
+
 > Dashboard: The dashboard provides a quick overview of tasks and completion status.
 
 > Pie Chart: A pie chart visualization offers a visual representation of task distribution by category, improving user insight into their tasks.
