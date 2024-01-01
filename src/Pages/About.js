@@ -6,15 +6,15 @@ const About = () => {
     <div className='flex flex-col justify-center items-center bg-slate-100 
     w-full h-full gap-10'>
       <div className='flex flex-col justify-center items-center'>
-        <h1 className='font-bold text-5xl'>GO <span className='text-cyan-700'>BEYOND LIMITS</span></h1>
+        <h1 className='font-bold text-5xl max-[500px]:text-xl'>GO <span className='text-cyan-700'>BEYOND LIMITS</span></h1>
         
         <BiSolidQuoteLeft />
-          <blockquote className='text-2xl'>
+          <blockquote className='text-2xl max-[500px]:text-sm'>
             The pain that you are willing to endure is measured by how bad you want it.
            </blockquote>      
         <BiSolidQuoteRight/>
   
-          <i className='text-lg text-gray-600'>-David Goggins</i>
+          <i className='text-lg text-gray-600 max-[500px]:text-sm'>-David Goggins</i>
       </div>
       
       <div className="about-container">

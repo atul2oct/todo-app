@@ -10,11 +10,12 @@ const DashboardPage = () => {
   const[isDash,setIsDash] = useState(true);
   const {task} = useContext(FetchedContext);
   return (
-    <div className='flex flex-col justify-center items-center'>
+    <div className='flex flex-col justify-center items-center overflow-hidden
+    w-full h-full'>
       <DashContext.Provider value={{isDash,setIsDash}}>
         <div className="dashboard-page">
           <DashNav/>
-          <div className="dash-container-content">
+          <div className="dash-container-content w-screen">
             {
               isDash ? <DashboardContainer/> : <TasksContainer/>
             }

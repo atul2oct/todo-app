@@ -13,6 +13,8 @@ export default function App() {
   useEffect(() => {
     // Storing Task in LOcal storage, if Doesnt exists then creating
     const storedTasks = JSON.parse(localStorage.getItem("tasks"))
+    console.log("storedTasks")
+    console.log(storedTasks)
     if (storedTasks && storedTasks.length>0) {
       setTasks(storedTasks);
     } else {
@@ -21,12 +23,12 @@ export default function App() {
   },[]);
 
   return (
-    <div className="w-screen h-screen flex flex-col
+    <div className="w-screen h-screen flex flex-col 
     bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-amber-200 via-violet-600 to-sky-900">
       <div>
         <Navbar/>
       </div>
-      <div className="h-[90%]">
+      <div className="h-[90%] flex flex-col ">
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/dashboard" element={<DashboardPage/>}/>

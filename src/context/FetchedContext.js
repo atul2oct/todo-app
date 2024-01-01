@@ -27,9 +27,8 @@ export default function FetchedContextProvider({children}){
         let url="https://jsonplaceholder.typicode.com/todos";
         try{
             const data = await axios.get(url);
-            console.log(data);
-            setTasks(data);
-            setDataToLocalStorage(data);
+            setTasks(data.data);
+            setDataToLocalStorage(data.data);
         }
         catch(error){
             notify("Error Fetching Tasks from API!", "error")
