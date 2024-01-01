@@ -21,3 +21,20 @@ https://jsonplaceholder.typicode.com/todos
 > Dashboard: The dashboard provides a quick overview of tasks and completion status.
 
 > Pie Chart: A pie chart visualization offers a visual representation of task distribution by category, improving user insight into their tasks.
+
+## App structure
+1. index.js
+   - App.js
+     - Navbar
+     - Home
+     - DashboardPage
+        - DashNav
+        - DashboardContainer
+            - PieChartComponent
+        - TasksContainer
+            - Task
+            - AddTaskBox
+            - EditBox
+            - Description
+     - About
+     - Footer
