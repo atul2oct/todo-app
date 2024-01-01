@@ -22,19 +22,19 @@ https://jsonplaceholder.typicode.com/todos
 
 > Pie Chart: A pie chart visualization offers a visual representation of task distribution by category, improving user insight into their tasks.
 
-## App structure
-1. index.js
-   - App.js
-     - Navbar
-     - Home
-     - DashboardPage
-        - DashNav
-        - DashboardContainer
-            - PieChartComponent
-        - TasksContainer
-            - Task
-            - AddTaskBox
-            - EditBox
-            - Description
-     - About
-     - Footer
+## App Components structure
+   index
+   - 1.App
+     - 1.Navbar
+     - 2.Home
+     - 3.DashboardPage
+        - 1.DashNav
+        - 2.DashboardContainer
+            - 1.PieChartComponent
+        - 3.TasksContainer
+            - 1.Task
+            - 2.AddTaskBox
+            - 3.EditBox
+            - 4.Description
+     - 4.About
+     - 5.Footer
